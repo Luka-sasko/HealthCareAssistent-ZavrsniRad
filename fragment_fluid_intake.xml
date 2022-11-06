@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FluidIntakeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+        <TextView
+            android:id="@+id/tvFluidIntakeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="serif"
+            android:text=" Količina unesene tekućine "
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F3AA0202"
+            android:gravity="center_horizontal"
+            android:textSize="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFluidIntakeTitle" />
+
+        <TextView
+            android:id="@+id/broj_casa_vode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="7dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <Button
+            android:id="@+id/add_glass"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="24dp"
+            android:text="+"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/broj_casa_vode" />
+
+        <Button
+            android:id="@+id/reduce_glass"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="130dp"
+            android:text="-"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/broj_casa_vode" />
+
+        <TextView
+            android:id="@+id/advice"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/savjet_količina_vode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/casa1" />
+
+        <ImageView
+            android:id="@+id/casa3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_local_drink_24"
+            app:layout_constraintEnd_toStartOf="@+id/casa4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/casa2"
+            app:layout_constraintTop_toTopOf="@+id/casa2" />
+
+        <ImageView
+            android:id="@+id/casa5"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_local_drink_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/casa4"
+            app:layout_constraintTop_toTopOf="@+id/casa4" />
+
+        <ImageView
+            android:id="@+id/casa1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_local_drink_24"
+            app:layout_constraintEnd_toStartOf="@+id/casa2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_glass" />
+
+        <ImageView
+            android:id="@+id/casa2"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_local_drink_24"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/casa3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/casa1"
+            app:layout_constraintTop_toBottomOf="@+id/Ocjena" />
+
+        <ImageView
+            android:id="@+id/casa4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_local_drink_24"
+            app:layout_constraintEnd_toStartOf="@+id/casa5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/casa3"
+            app:layout_constraintTop_toTopOf="@+id/casa3" />
+
+        <TextView
+            android:id="@+id/Ocjena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:background="@color/white"
+            android:fontFamily="serif"
+            android:text="Razina unesene količine vode:"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/casa1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_glass" />
+
+        <TextView
+            android:id="@+id/preporuka"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=" Preporučena vrijednost koju još trebate unjeti je "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

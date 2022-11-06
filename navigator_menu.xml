@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_PersonalInfo"
+        android:title="Osobni podaci"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+
+    <item
+        android:id="@+id/nav_CaloriesIntake"
+        android:title="Unesene kalorije"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        />
+    <item
+        android:id="@+id/nav_CaloriesBurned"
+        android:title="Potrošene kalorije"
+        android:icon="@drawable/ic_baseline_calories_burned_24"
+        />
+    <item
+        android:id="@+id/nav_kolicinaSNa"
+        android:title="Količina sna"
+        android:icon="@drawable/sleep"
+        />
+    <item
+        android:id="@+id/nav_FluidIntake"
+        android:title="Unesena količina tekućine"
+        android:icon="@drawable/ic_baseline_local_drink_24"
+        />
+    <item
+        android:id="@+id/nav_Bmi"
+        android:title="Indeks tjelesne mase"
+        android:icon="@drawable/ic_bmi"
+        />
+    <item
+        android:id="@+id/nav_BloodPresure"
+        android:title="Krvni tlak"
+        android:icon="@drawable/ic_bloodpresure"
+        />
+    <item
+        android:id="@+id/nav_Glucose"
+        android:title="Razina šećera u krvi"
+        android:icon="@drawable/ic_glucose"
+        />
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_odjava"
+                android:title="Odjava"
+                android:icon="@drawable/ic_baseline_elogout"/>
+        </menu>
+    </item>
+
+</menu>

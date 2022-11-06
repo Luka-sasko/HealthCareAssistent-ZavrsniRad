@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KolicinaSnaFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+
+        <TextView
+            android:id="@+id/tvSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="serif"
+            android:text=" Količina sna "
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F3AA0202"
+            android:gravity="center_horizontal"
+            android:textSize="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSleep" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:max="960"
+            android:min="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSleepTimeValue" />
+
+        <TextView
+            android:id="@+id/tvSleepTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/seekBar"
+            app:layout_constraintStart_toStartOf="@+id/seekBar"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ibtnAddSleepTime"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-14dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/seekBar"
+            app:layout_constraintTop_toBottomOf="@+id/tvSleepTimeValue"
+            app:tint="@color/bg"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtnAddSleepTime" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar6"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar5"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar7"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar2"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar1"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar3"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toEndOf="@+id/progressBar4"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBar6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:min="0"
+            android:rotation="-90"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="cursive"
+            android:text="Povijest spavanja"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/tvDay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="42dp"
+            android:text="Thu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar6" />
+
+        <TextView
+            android:id="@+id/tvDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay1"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+        <TextView
+            android:id="@+id/tvDay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay2"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+        <TextView
+            android:id="@+id/tvDay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay3"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+        <TextView
+            android:id="@+id/tvDay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay4"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar5" />
+
+        <TextView
+            android:id="@+id/tvDay6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay5"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+        <TextView
+            android:id="@+id/tvDay7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="42dp"
+            android:text="Day"
+            app:layout_constraintStart_toEndOf="@+id/tvDay6"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

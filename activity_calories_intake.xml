@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaloriesIntakeActivity"
+    android:padding="10dp"
+    android:background="@color/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_searchview"
+        android:gravity="center"
+        android:hint="Unesite naziv proizvoda"
+        android:iconifiedByDefault="false" />
+
+    <ListView
+        android:id="@+id/foodListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etGramaza"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/etGramaza"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearch"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_searchview"
+        android:gravity="center"
+        android:hint="(g/mL) : 100"
+        android:iconifiedByDefault="false"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearch"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/etGramaza"
+        android:text="Dodaj"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/buttonAdd"
+        android:text="Poništi"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
